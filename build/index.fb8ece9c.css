@@ -1,0 +1,48 @@
+img {
+  width: 30px;
+}
+
+section {
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.field {
+  gap: 5px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.area {
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+code {
+  width: 140px;
+}
+
+.area {
+  background-image: url("empty.5951b871.png");
+}
+
+.start {
+  background-image: url("start.6a29a125.png");
+}
+
+.mirror1 {
+  background-image: url("mirror1.dc5de601.png");
+}
+
+.mirror2 {
+  background-image: url("mirror2.4ee2a4b8.png");
+}
+
+.jewel {
+  background-image: url("jewel.82717db3.png");
+}
