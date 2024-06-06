@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Laser Game
+  body
+    section 
+      p 
+          <img src = "./assets/start.png"> を選んで、レーザーを飛ばす向きを決めて
+          <img src = "./assets/jewel.png"> に当てよう
+          <br>
+          <img src = "./assets/mirror1.png">や<img src = "./assets/mirror2.png">は、レーザーを反射して進行方向を変えるぜ
+      
+    section
+      #field.field
+    
+    section.interface
+      select#laserDirection
+        option(value="up") 上向き
+        option(value="down") 下向き
+        option(value="left") 左向き
+        option(value="right") 右向き
+      button#simulateButton レーザー発射
+      button#resetButton もとにもどす
+      //- button#nextStageButton(style="display: none;") Next Stage
+      button#nextStageButton Next Stage
+    section 
+      code#fieldData
+    section 
+      p 0 : <span class = "area">
+      p 1 : <span class = "area mirror1">
+      p 2 : <span class = "area mirror2">
+      p 3 : <span class = "area jewel">
+      p 4 : <span class = "area start">
+  script(src = "./main.js" type="module")
+  //- script(src = "./stage2.js" type="module")

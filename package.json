@@ -1,0 +1,31 @@
+{
+  "name": "laser_and_mirror",
+  "version": "1.0.0",
+  "description": "",
+  "source" : "./main.js",
+  "targets": {
+    "default": {
+      "distDir": "./build",
+      "optimize": false,
+      "sourceMap": false
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " rm ./parcel-cache || parcel ./index.pug --open --no-cache",
+    "build": "rm -r ./dist/* ; parcel build ./index.pug --public-url ./build/",
+    "build_sub": "rm -r ./build/* || parcel build ./index.pug  --no-content-hash "
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "pug": "^3.0.3",
+    "sass": "^1.77.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0"
+  }
+}
