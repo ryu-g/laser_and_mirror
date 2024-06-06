@@ -194,10 +194,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (area == 3) areaElement.classList.add("jewel")
         if (area == 4) areaElement.classList.add("start")
         areaElement.addEventListener('click', () => {
-          startX = x
-          startY = y
-          if(areaElement.classList.contains('start'))
+          if(areaElement.classList.contains("start")){
+            startX = x
+            startY = y
+          }
+          if(areaElement.classList.contains('start')){
             highlightStartPosition(x, y, field_w, field_h)
+          }
         })
         fieldElement.appendChild(areaElement)
       })
